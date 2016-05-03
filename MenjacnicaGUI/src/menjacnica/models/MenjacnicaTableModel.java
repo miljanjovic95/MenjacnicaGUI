@@ -1,4 +1,3 @@
-
 package menjacnica.models;
 
 import java.util.LinkedList;
@@ -12,7 +11,7 @@ public class MenjacnicaTableModel extends AbstractTableModel {
 
 	private final String[] kolone = new String[] { "Sifra", "Skraceni naziv", "Prodajni", "Srednji", "Kupovni",
 			"Naziv" };
-	private List<Kurs> kursevi;
+	private static List<Kurs> kursevi;
 	
 	public MenjacnicaTableModel(List<Kurs> kursevi) {
 		if (kursevi == null) {
